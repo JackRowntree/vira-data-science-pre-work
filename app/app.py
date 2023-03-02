@@ -29,6 +29,11 @@ app.layout = html.Div(
         Cohort represented in all studies - total at each stage
     """
         ),
+        html.P(
+            children="""
+        e.g. visit1 number is subjects present in baseline + visit1, visit2 number is total present in baseline + visit1 +visit2, etc.
+    """
+        ),
         dcc.Graph(id="cohort_fig", figure=fig_present_in_all),
         html.H2(
             children="""
