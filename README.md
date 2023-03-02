@@ -1,6 +1,6 @@
 ## Summary 
 
-- See `jupyter/de-task-notebook.ipynb` for a full summary of the solution, and data exploration code.
+- Open `jupyter/de-task-notebook.ipynb` for a full summary of the solution, and data exploration code.
 
 - Dashboard code in /app
 
