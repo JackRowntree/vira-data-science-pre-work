@@ -1,4 +1,0 @@
-pandas
-plotly
-jupyter-dash
-packaging

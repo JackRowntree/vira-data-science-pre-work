@@ -6,20 +6,13 @@ services:
      restart: always
      ports:
        - 8000:8000
-  jupyter:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    volumes:
-      - ./:/home/jovyan/
-    ports:
-      - 8888:8888
-    depends_on:
-      db:
-        condition: service_healthy
+     depends_on:
+        db:
+          condition: service_healthy
   db:
     image: postgres:latest
     restart: always
+    container_name: db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -32,6 +25,4 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
-      - 5432:5432
-volumes:
-  pgdata:
+      - 5433:5432
