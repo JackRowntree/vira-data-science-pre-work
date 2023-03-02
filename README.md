@@ -31,7 +31,7 @@ The database and dashboard are each hosted in docker containers, to easily deplo
 4. Create a new virtual env `python3 -m venv ./vira-task-env`
 5. Activate the virtual env `source ./vira-task-env/bin/activate` and `pip install jupyter`
 6. Add kernel to jupyter environment `ipython kernel install --name "vira-kernel" --user` 
-7. `jupter notebook`, select `vira-kernel` kernel, and run cells in section 2.
+7. `jupter notebook`, select `vira-kernel` kernel, and run cells.
 8. `docker-compose up dashboard` to spin up the dash service.
 9. Open the dash service in browser at `0.0.0.0/8000`
 
