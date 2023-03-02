@@ -4,5 +4,5 @@
 *.ipython/*
 *.local/*
 *vira-task-kernel/*
-jupyter/*
 .jupyter/*
+jupyter/.ipynb_checkpoints/*
