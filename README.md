@@ -24,11 +24,15 @@ The database and dashboard are each hosted in docker containers, to easily deplo
 
 # Running Locally
 
-1. Make sure you have jupyter installed on your machine
-2. Make sure you have Docker installed on your machine
-3. docker-compose up db to spin up the postgres service, which will be available at `127.0.0.1:5433`
-4. Open this notebook in the `/vira-data-science-pre-work` repo with jupyter, and run cells in section 2.
-5. `docker-compose up dashboard` to spin up the dash service.
-6. Open the dash service in browser at `0.0.0.0/8000`
+
+1. Make sure you have Docker installed on your machine
+2. docker-compose up db to spin up the postgres service, which will be available at `127.0.0.1:5433`
+3. `cd` into `./jupyter`
+4. Create a new virtual env `python3 -m venv ./vira-task-env`
+5. Activate the virtual env `source ./vira-task-env/bin/activate` and `pip install jupyter`
+6. Add kernel to jupyter environment `ipython kernel install --name "vira-kernel" --user` 
+7. `jupter notebook`, select `vira-kernel` kernel, and run cells in section 2.
+8. `docker-compose up dashboard` to spin up the dash service.
+9. Open the dash service in browser at `0.0.0.0/8000`
 
 
